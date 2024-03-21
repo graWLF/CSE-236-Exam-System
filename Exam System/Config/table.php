@@ -6,7 +6,6 @@
 ?>
 
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,7 +19,7 @@
     
 </head>
     <body class="sb-nav-fixed">
-    <div class="card mb-4">
+    <div class="card mb-5">
                             <div class="card-header">
                                 <i class="fas fa-table me-1"></i>
                                 All Classes
@@ -38,18 +37,24 @@
                                     </thead>
                                     
                                     <tbody>
-                                        <tr>
+                                        
                                             <?php
                                             while($row = mysqli_fetch_assoc($result)){
 
-                                            }
-                                            ?>
-                                            <td><?php echo $row['PK'];?></td>
-                                            <td><?php echo $row['Name'];?></td>
-                                            <td><?php echo $row['Code'];?></td>
-                                            <td><?php echo $row['InstructorFK'];?></td>
                                             
-                                        </tr>
+                                            ?>
+                                            <tr>
+                                                    <td><?php echo $row['PK'];?></td>
+                                                    <td><?php echo $row['Name'];?></td>
+                                                    <td><?php echo $row['Code'];?></td>
+                                                    <td><?php echo $row['InstructorFK'];?></td>
+                                                    </tr>
+                                            <?php
+                                            }?>
+
+                                            
+                                            
+                                        
                                         
                                     </tbody>
                                 </table>

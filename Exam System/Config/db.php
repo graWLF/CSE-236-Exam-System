@@ -1,7 +1,7 @@
 <?php
     $con = mysqli_connect("localhost","root","","academicdb");
 
-    if(!con){
+    if(!$con){
         die("Connection Error");
     }
 ?>
