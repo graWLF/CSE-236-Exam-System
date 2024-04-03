@@ -27,7 +27,7 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
                     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="#!">Profile</a></li>
+                        <li><a class="dropdown-item" href="Student.html">Profile</a></li>
                         <li><hr class="dropdown-divider" /></li>
                         <li><a class="dropdown-item" href="#!">Activity Log</a></li>
                         <li><a class="dropdown-item" href="#!">Logout</a></li>
@@ -63,7 +63,7 @@
                             </a>
 
                             <div class="sb-sidenav-menu-heading">Quizzes</div>
-                            <a class="nav-link" href="#">
+                            <a class="nav-link" href="CreateExam.php">
                                 <div class="sb-nav-link-icon"></i></div>
                                 Create Quiz
                             </a>
@@ -127,6 +127,7 @@
                                             <th>Name</th>
                                             <th>Students</th>
                                             <th>Instructor</th>
+                                            <th>Detail</th>
                                             
                                         </tr>
                                     </thead>
@@ -142,6 +143,7 @@
                                                     <td><?php echo $row['Name'];?></td>
                                                     <td><?php echo $row['Code'];?></td>
                                                     <td><?php echo $row['InstructorFK'];?></td>
+                                                    <td><button type="submit" class="btn btn-primary" href="Student.html">Detail</button></td>
                                                     </tr>
                                             <?php
                                             }?>
